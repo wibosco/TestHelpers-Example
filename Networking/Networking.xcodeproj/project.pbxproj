@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4363894B2DBB842A00A21C4A /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436389422DBB842900A21C4A /* Networking.framework */; };
+		43EF07782DBBA84F001A943E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436389422DBB842900A21C4A /* Networking.framework */; };
+		43EF07792DBBA84F001A943E /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 436389422DBB842900A21C4A /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,11 +20,33 @@
 			remoteGlobalIDString = 436389412DBB842900A21C4A;
 			remoteInfo = Networking;
 		};
+		43EF077A2DBBA84F001A943E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 436389392DBB842900A21C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436389412DBB842900A21C4A;
+			remoteInfo = Networking;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43EF077C2DBBA84F001A943E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				43EF07792DBBA84F001A943E /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		436389422DBB842900A21C4A /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4363894A2DBB842A00A21C4A /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EF076F2DBBA823001A943E /* NetworkingTestHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingTestHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +58,11 @@
 		4363894E2DBB842A00A21C4A /* NetworkingTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		43EF07702DBBA823001A943E /* NetworkingTestHelpers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NetworkingTestHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -54,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43EF076C2DBBA823001A943E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EF07782DBBA84F001A943E /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +99,8 @@
 			children = (
 				436389442DBB842900A21C4A /* Networking */,
 				4363894E2DBB842A00A21C4A /* NetworkingTests */,
+				43EF07702DBBA823001A943E /* NetworkingTestHelpers */,
+				43EF07772DBBA84F001A943E /* Frameworks */,
 				436389432DBB842900A21C4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,14 +110,29 @@
 			children = (
 				436389422DBB842900A21C4A /* Networking.framework */,
 				4363894A2DBB842A00A21C4A /* NetworkingTests.xctest */,
+				43EF076F2DBBA823001A943E /* NetworkingTestHelpers.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		43EF07772DBBA84F001A943E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		4363893D2DBB842900A21C4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EF076A2DBBA823001A943E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,6 +188,31 @@
 			productReference = 4363894A2DBB842A00A21C4A /* NetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		43EF076E2DBBA823001A943E /* NetworkingTestHelpers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EF07762DBBA823001A943E /* Build configuration list for PBXNativeTarget "NetworkingTestHelpers" */;
+			buildPhases = (
+				43EF076A2DBBA823001A943E /* Headers */,
+				43EF076B2DBBA823001A943E /* Sources */,
+				43EF076C2DBBA823001A943E /* Frameworks */,
+				43EF076D2DBBA823001A943E /* Resources */,
+				43EF077C2DBBA84F001A943E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43EF077B2DBBA84F001A943E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				43EF07702DBBA823001A943E /* NetworkingTestHelpers */,
+			);
+			name = NetworkingTestHelpers;
+			packageProductDependencies = (
+			);
+			productName = NetworkingTestHelpers;
+			productReference = 43EF076F2DBBA823001A943E /* NetworkingTestHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +229,10 @@
 					};
 					436389492DBB842A00A21C4A = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					43EF076E2DBBA823001A943E = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -169,6 +252,7 @@
 			targets = (
 				436389412DBB842900A21C4A /* Networking */,
 				436389492DBB842A00A21C4A /* NetworkingTests */,
+				43EF076E2DBBA823001A943E /* NetworkingTestHelpers */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +266,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		436389482DBB842A00A21C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EF076D2DBBA823001A943E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,6 +296,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43EF076B2DBBA823001A943E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -212,6 +310,11 @@
 			isa = PBXTargetDependency;
 			target = 436389412DBB842900A21C4A /* Networking */;
 			targetProxy = 4363894C2DBB842A00A21C4A /* PBXContainerItemProxy */;
+		};
+		43EF077B2DBBA84F001A943E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436389412DBB842900A21C4A /* Networking */;
+			targetProxy = 43EF077A2DBBA84F001A943E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -436,6 +539,73 @@
 			};
 			name = Release;
 		};
+		43EF07732DBBA823001A943E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingTestHelpers;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43EF07742DBBA823001A943E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.NetworkingTestHelpers;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +632,15 @@
 			buildConfigurations = (
 				436389592DBB842A00A21C4A /* Debug */,
 				4363895A2DBB842A00A21C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EF07762DBBA823001A943E /* Build configuration list for PBXNativeTarget "NetworkingTestHelpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EF07732DBBA823001A943E /* Debug */,
+				43EF07742DBBA823001A943E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
