@@ -7,6 +7,7 @@
 
 import Testing
 import Foundation
+import NetworkingTestHelper
 
 @testable import TestHelpers_Example
 
@@ -16,6 +17,12 @@ struct AwesomeFeatureTests {
 
     @Test("Given gainAwesomeness is called, then networking service is called with the passed in URL")
     func checkNetworkRequestIsMade() async {
-        // Implement unit test
+        let networkingService = StubNetworkingService()
+        let url = URL(string: "https://example.com")!
+        let sut = AwesomeFeature(networkingService: networkingService)
+        
+        await sut.gainAwesomeness(from: url)
+        
+        #expect(networkingService.events == [.makeRequestCalled(url)])
     }
 }

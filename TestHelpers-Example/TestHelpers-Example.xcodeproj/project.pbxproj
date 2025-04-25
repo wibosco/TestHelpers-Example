@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		436389612DBB857900A21C4A /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436389602DBB857900A21C4A /* Networking.framework */; };
 		436389622DBB857900A21C4A /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 436389602DBB857900A21C4A /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		436389952DBB94F900A21C4A /* NetworkingTestHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436389942DBB94F900A21C4A /* NetworkingTestHelper.framework */; };
+		436389962DBB94F900A21C4A /* NetworkingTestHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 436389942DBB94F900A21C4A /* NetworkingTestHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,12 +35,24 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		436389972DBB94F900A21C4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				436389962DBB94F900A21C4A /* NetworkingTestHelper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4300E92E2DBB7BD400CA5A79 /* TestHelpers-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestHelpers-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4300E93E2DBB7BD700CA5A79 /* TestHelpers-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestHelpers-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		436389602DBB857900A21C4A /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436389942DBB94F900A21C4A /* NetworkingTestHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkingTestHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436389952DBB94F900A21C4A /* NetworkingTestHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,7 @@
 		4363895F2DBB857800A21C4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				436389942DBB94F900A21C4A /* NetworkingTestHelper.framework */,
 				436389602DBB857900A21C4A /* Networking.framework */,
 			);
 			name = Frameworks;
@@ -133,6 +149,7 @@
 				4300E93A2DBB7BD700CA5A79 /* Sources */,
 				4300E93B2DBB7BD700CA5A79 /* Frameworks */,
 				4300E93C2DBB7BD700CA5A79 /* Resources */,
+				436389972DBB94F900A21C4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
