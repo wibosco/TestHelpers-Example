@@ -19,6 +19,7 @@ platform :ios do
   lane :run_unit_tests do
     scan(
       workspace: 'TestHelpers-Example.xcworkspace',
+      scheme: 'TestHelpers-Example',
       skip_build: true
     )
   end
