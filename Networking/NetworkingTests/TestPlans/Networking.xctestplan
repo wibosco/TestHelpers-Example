@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "4285DFC8-CE83-46B4-ADDF-85DE39EA78CD",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Networking.xcodeproj",
+        "identifier" : "436389492DBB842A00A21C4A",
+        "name" : "NetworkingTests"
+      }
+    }
+  ],
+  "version" : 1
+}

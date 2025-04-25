@@ -22,5 +22,10 @@ platform :ios do
       scheme: 'TestHelpers-Example',
       skip_build: true
     )
+    scan(
+      workspace: 'TestHelpers-Example.xcworkspace',
+      scheme: 'Networking',
+      skip_build: true
+    )
   end
 end

@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "A5352F10-F74E-40CA-BFBC-85BBEDFD3330",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TestHelpers-Example.xcodeproj",
+        "identifier" : "4300E93D2DBB7BD700CA5A79",
+        "name" : "TestHelpers-ExampleTests"
+      }
+    }
+  ],
+  "version" : 1
+}

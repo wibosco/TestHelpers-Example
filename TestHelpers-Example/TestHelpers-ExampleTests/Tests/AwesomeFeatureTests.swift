@@ -6,11 +6,16 @@
 //
 
 import Testing
+import Foundation
+
+@testable import TestHelpers_Example
 
 struct AwesomeFeatureTests {
+    
+    // MARK: - Tests
 
     @Test("Given gainAwesomeness is called, then networking service is called with the passed in URL")
-    func checkNetworkRequestIsMade() async throws {
+    func checkNetworkRequestIsMade() async {
         // Implement unit test
     }
 }
