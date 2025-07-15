@@ -3,4 +3,7 @@
 [![License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](https://github.com/wibosco/TestHelpers-Example/blob/main/LICENSE)
 
 # TestHelpers-Example
-An example project showing how to use test-helper targets to simplify unit testing.
+
+Modules are super useful for splitting our project into smaller, more manageable chunks. But they could be doing more. Here, we look at how a utility module can ease the burden not only for production targets but also test targets by introducing a test-helper target as shown in this post - https://williamboles.com/hitting-the-target-with-testhelpers/.
+
+The project on the `main` branch does not have a test-helper target, as the associated post walks through how to add one. If you want to see the completed project with a test-helper target, checkout the `NetworkingTestHelpers` branch.
